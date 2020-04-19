@@ -1,0 +1,75 @@
+hr {
+    margin: 10px 0;
+}
+#project-title {
+    font-size: 3em;
+    font-weight: bold;
+}
+#calendar {
+    padding: 25px;
+}
+@keyframes selectMonth {
+    to {
+        background-color: rgba(165, 42, 42, 1);
+    }
+}
+#selector-box {
+    padding: 10px;
+}
+#selected-month-name {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(165, 42, 42, 1);
+    color: white;
+}
+#month-selector {
+    background-color: rgba(165, 42, 42, 0.8);
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+#month-selector:hover {
+    animation-name: selectMonth;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+    animation-duration: 500ms;
+}
+#draw-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+#draw-days li {
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+@keyframes dayHover {
+    to {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transform: scale(1.01);
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+#draw-days li:hover {
+    animation-name: dayHover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+@media (min-width: 768px) {
+    #draw-days {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

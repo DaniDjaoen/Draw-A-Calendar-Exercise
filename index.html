@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw-A-Calendar | A project to exercise Javascript.</title>
+    <link rel="stylesheet" href="assets/styles/destyle.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <div id="calendar">
+        <h1 id="project-title">Draw-A-Calendar</h1>
+        <p id="project-description">A project to exercise Javascript, exerciser: <a href="#">Dani Djaoen</a>.</p>
+        <hr>
+        <div id="selector-box">
+        <label for="month-selector">Select a month: </label>
+        <select name="select-month" id="month-selector">
+            <option id="1" value="january" selected>January</option>
+            <option id="2" value="february">February</option>
+            <option id="3" value="march">March</option>
+            <option id="4" value="april">April</option>
+            <option id="5" value="may">May</option>
+            <option id="6" value="june">June</option>
+            <option id="7" value="july">July</option>
+            <option id="8" value="august">August</option>
+            <option id="9" value="september">September</option>
+            <option id="10" value="october">October</option>
+            <option id="11" value="november">November</option>
+            <option id="12" value="december">December</option>
+        </select>
+        </div>
+        <div id="calendar-box">
+            <h2 id="selected-month-name"></h2>
+            <div id="draw-calendar">
+                <ul id="draw-days">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts/draw-a-calendar.js"></script>
+</body>
+</html>

@@ -68,7 +68,7 @@ hr {
     animation-fill-mode: forwards;
     animation-delay: 0ms;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #draw-days {
         grid-template-columns: 1fr 1fr 1fr;
     }
